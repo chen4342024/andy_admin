@@ -30,7 +30,7 @@
                     </el-table-column>
                     <el-table-column :label="'压缩包'" width="100" align="center">
                         <template slot-scope="scope">
-                            <a v-if="scope.row['zipUrl']" :href="scope.row['zipUrl']" :download="scope.row['zipUrl']">
+                            <a v-if="scope.row['zipUrl']" :href="scope.row['zipUrl']" download="">
                                 <el-button type="text">下载</el-button>
                             </a>
                             <span v-else>暂无</span>
